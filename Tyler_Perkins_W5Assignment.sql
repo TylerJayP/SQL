@@ -1,0 +1,17 @@
+-- ----------------------------------------------------------------Tyler Perkins--------------------------------------------------------------------------
+-- #1 SELECT COUNT(*) AS seniors_architecture_4gpa FROM grading_system.students WHERE major_id = 2 AND class_standing = 'Senior' AND cumulative_gpa = 4.0 
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #2 SELECT COUNT(*) AS gpa_greater_than_equal_threefive FROM grading_system.students WHERE cumulative_gpa >= 3.50
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #3 SELECT AVG(cumulative_gpa) AS biology_gpa_average FROM grading_system.students WHERE major_id = 4
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #2 SELECT grade, COUNT(grade) AS total_grade_amount FROM grading_system.registration GROUP BY grade ORDER BY grade
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #5 SELECT dept_abbrv, COUNT(dept_abbrv) AS course_totals FROM grading_system.course_catalog GROUP BY dept_abbrv ORDER BY dept_abbrv
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #6 SELECT class_standing, AVG(cumulative_gpa) AS avg_gpa FROM grading_system.students GROUP BY class_standing
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #7 SELECT grade, COUNT(grade) AS more_than_25 FROM grading_system.registration GROUP BY grade HAVING(COUNT(grade)) > 25
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------
+-- #8 SELECT DISTINCT catalog_id FROM grading_system.classes ORDER BY catalog_id
+-- -------------------------------------------------------------------------------------------------------------------------------------------------------

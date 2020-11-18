@@ -1,0 +1,23 @@
+-- ------------------------------------------------------------- Tyler  Perkins ----------------------------------------------------------------
+-- ---------------------------------------------------------------------------------------------------------------------------------------------
+-- #1 - USE record_store;
+-- CREATE TABLE customer_reviews (
+-- 
+-- customer_id int NOT NULL AUTO_INCREMENT,
+-- product_reviewed VARCHAR(45) DEFAULT NULL,
+-- product_rating int DEFAULT NULL,
+-- reviews VARCHAR(45) DEFAULT NULL,
+-- reviewer_name VARCHAR(45) DEFAULT NULL,
+-- reviewer_email VARCHAR(45) DEFAULT NULL,
+-- PRIMARY KEY (customer_id)
+--
+-- );
+-- ----------------------------------------------------------------------------------------------------------------------------------------------
+-- #2 - ALTER TABLE customers ADD age int;
+-- ALTER TABLE customer_reviews ADD posted DATETIME;
+-- ALTER TABLE customers DROP COLUMN twitter;
+-- ALTER TABLE products MODIFY COLUMN artist VARCHAR(128);
+-- ALTER TABLE customers MODIFY COLUMN phone VARCHAR(25);
+-- SELECT * FROM record_store.customer_reviews;
+-- SELECT * FROM record_store.customers;
+-- ----------------------------------------------------------------------------------------------------------------------------------------------

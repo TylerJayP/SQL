@@ -1,0 +1,22 @@
+-- ------------------------------------------------------Tyler Perkins---------------------------------------------------
+-- ----------------------------------------------------------------------------------------------------------------------
+-- #1 - UPDATE record_store.customers SET zip = '84000-0000' WHERE state = 'UT';
+-- #1 Continued - SELECT * FROM record_store.customers ORDER BY state;
+-- ----------------------------------------------------------------------------------------------------------------------
+-- #2 - record_store.orders SET order_status = 9 WHERE order_date = '2020-04-30' AND customer_id = 178 AND 183 AND 186;
+-- #2 Continued -SELECT * FROM record_store.orders ORDER BY customer_id;
+-- ----------------------------------------------------------------------------------------------------------------------
+-- #3 Everything Below
+-- USE record_store;
+-- 
+-- SELECT c.customer_id, c.first_name, c.last_name, o.*, i.* 
+-- FROM customers c 
+-- INNER JOIN orders o ON c.customer_id = o.customer_id 
+-- INNER JOIN order_items i ON i.order_id = o.order_id 
+-- WHERE c.customer_id = 173;
+--
+-- DELETE FROM order_items WHERE order_id = 150;
+-- DELETE FROM orders WHERE customer_id = 173;
+-- DELETE FROM customers WHERE customer_id = 173;
+
+-- SELECT * FROM record_store.customers WHERE first_name = 'Delia'
